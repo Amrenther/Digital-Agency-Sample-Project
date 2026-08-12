@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+:root {
+  --font-inter: "Inter", sans-serif;
+  --font-syne: "Syne", sans-serif;
+  --color-primary: #22d3ee;
+  --color-accent: #a855f7;
+  --bg-dark: #0a0f1e;
+  --bg-darker: #080c18;
+  --bg-darkest: #060a14;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0f1e;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #22d3ee, #a855f7);
+  border-radius: 3px;
+}
+
+/* Selection color */
+::selection {
+  background: rgba(34, 211, 238, 0.3);
+  color: white;
+}
+
+/* Smooth section transitions */
+section {
+  transition: background-color 0.3s ease;
+}
+
+/* Light mode - override the dark sections */
+html.light body {
+  background-color: #f0f4ff;
+  color: #0a0f1e;
+}
+
+html.light section,
+html.light header,
+html.light footer {
+  background-color: #f0f4ff !important;
+}
+
+html.light .text-white {
+  color: #0a0f1e !important;
+}
+
+html.light nav.text-white {
+  color: #0a0f1e;
+}
