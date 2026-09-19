@@ -24,7 +24,8 @@
 </div>
 
 <br />
-[Website Link](https://digital-agency-sample-project-uqot.vercel.app/)
+<h2>Website Link</h2> <a href="https://digital-agency-sample-project-uqot.vercel.app/">Luminary Studio</a>
+
 
 
 ## 🚀 Overview
